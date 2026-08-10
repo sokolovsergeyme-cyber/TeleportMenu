@@ -1,0 +1,21 @@
+name: RaidSurvival
+version: '${project.version}'
+main: com.raidsurvival.RaidSurvivalPlugin
+api-version: '26.1'
+authors: [RaidSurvival]
+description: Periodic configurable raids with BossBar, waves, armored mobs, forced night and rewards. Geyser compatible.
+
+commands:
+  raid:
+    description: Main command for RaidSurvival
+    usage: /raid <subcommand>
+    permission: raidsurvival.admin
+    aliases: [rs, raidsurvival]
+
+permissions:
+  raidsurvival.admin:
+    description: Full access to RaidSurvival
+    default: op
+  raidsurvival.start:
+    description: Allow starting raids
+    default: op

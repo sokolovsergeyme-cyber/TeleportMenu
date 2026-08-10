@@ -1,0 +1,50 @@
+# RaidSurvival Configuration
+# Почти всё можно менять командами /raid settings ...
+
+settings:
+  waves: 6
+  interval-days: 5          # Интервал между рейдами
+  force-night: true         # Во время рейда всегда ночь
+  radius: 45                # Радиус спавна мобов от центра
+  allow-cancel: false       # Можно ли отменить рейд командой
+  prevent-sleep: true       # Нельзя спать во время рейда
+
+# Базовые мобы рейда
+mobs:
+  ZOMBIE:
+    min-wave: 1
+    min-count: 12
+    max-count: 22
+    armor-chance: 45
+  SKELETON:
+    min-wave: 1
+    min-count: 6
+    max-count: 14
+    armor-chance: 30
+  PILLAGER:
+    min-wave: 1
+    min-count: 4
+    max-count: 10
+    armor-chance: 25
+  VINDICATOR:
+    min-wave: 2
+    min-count: 2
+    max-count: 6
+    armor-chance: 40
+  WITCH:
+    min-wave: 2
+    min-count: 1
+    max-count: 3
+    armor-chance: 0
+  RAVAGER:
+    min-wave: 4
+    min-count: 1
+    max-count: 2
+    armor-chance: 0
+
+# Награда за успешное прохождение всего рейда
+rewards:
+  xp: 500
+  items:
+    - DIAMOND 3
+    - EMERALD 2
